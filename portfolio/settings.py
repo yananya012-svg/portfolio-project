@@ -26,7 +26,11 @@ SECRET_KEY = 'nv)=_h7=(#+dn7hk2#n17v406lzs#2-)l8kepd#y(u2g)g5_%-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "portfolio-project-njmv.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 
 # Application definition
