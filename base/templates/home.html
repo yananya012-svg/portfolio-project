@@ -1,261 +1,570 @@
-{% load static%}
-<!DOCTYPE html>
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portf </title>
-    <link rel="icon" type="image/x-icon" href="./Images/favicon.jpeg">
-    <link rel="stylesheet" href="{%static 'css/style.css'%}">
-    
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>Ananya Yadav | Portfolio</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
-<body>`
-    
-    <!-- Navbar Section -->
+
+<body>
+
+    <!-- ================= Navbar ================= -->
+
     <nav id="navbar" class="flex s-around bg-color">
+
         <div class="left-nav">
             <h2 class="t-white">Portfolio</h2>
         </div>
+
         <div class="right-nav">
+
             <ul class="flex">
-                <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
-                <li><a href="#about" class="t-white roboto">About Me <i class="fa-solid fa-user"></i></a></li>
-                <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
-                <li><a href="#Projects" class="t-white roboto">Projects <i class="fas fa-project-diagram"></i></a></li>
-                <li><a href="#Contact" class="t-white roboto">Contact <i class="fa-solid fa-rocket"></i></a></li>
+
+                <li>
+                    <a href="#home" class="t-white roboto">
+                        Home
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about" class="t-white roboto">
+                        About
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#skills" class="t-white roboto">
+                        Skills
+                        <i class="fa-solid fa-code"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#projects" class="t-white roboto">
+                        Projects
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="t-white roboto">
+                        Contact
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+
             </ul>
+
         </div>
+
     </nav>
 
-        
 
-    <!-- Home Section -->
-    <section id="home" class="flex s-around sw-80 m-auto">
+
+    <!-- ================= Home ================= -->
+
+    <section id="home" class="flex s-around m-auto">
+
         <div class="home-left flex items-center">
+
             <div class="home-content">
-                <h6 class="poppinss">Hi, I'm</h6>
-                <h1 class="t-white">Ananya Yadav</h1>
-                <h4 class="poppinss">Software Engineer</h4>
-                <a href="{% static 'pdf/django.pdf' %}"  target="_blank">
-                    <button class="btn poppins">Resume</button></a>
-                    
-                <a class="btn live poppins" id="hireme" href=""
-                    target="_blank">Let's Talk</a>
+
+                <h6 class="poppins">
+                    Hello, I'm
+                </h6>
+
+                <h1 class="t-white">
+                    Ananya Yadav
+                </h1>
+
+                <h4 class="poppins">
+                    Software Developer | Machine Learning Enthusiast
+                </h4>
+
+                <p class="t-white poppins">
+
+                    Aspiring Software Developer with hands-on experience in
+                    Python, Machine Learning, Full-Stack Development,
+                    Data Analysis and Django.
+
+                    Passionate about building AI-powered applications,
+                    responsive web solutions and solving real-world
+                    problems using modern technologies.
+
+                </p>
+
+                <br>
+
+                <a href="{% static 'pdf/Ananya_Yadav_Resume.pdf' %}"
+                    target="_blank">
+
+                    <button class="btn poppins">
+
+                        <i class="fa-solid fa-file"></i>
+
+                        Resume
+
+                    </button>
+
+                </a>
+
+                &nbsp;
+
+                <a href="mailto:yananya012@gmail.com">
+
+                    <button class="btn live poppins">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                        Let's Talk
+
+                    </button>
+
+                </a>
+
             </div>
+
         </div>
+
+
+
         <div class="home-right flex s-center items-center">
-            <div class="circle flex s-center items-center" id="mainImage">
-               
-                <img src="{% static 'images/mypic.png'%}" alt="">
+
+            <div class="circle">
+
+                <img src="{% static 'images/mypic.jpg' %}"
+                    alt="Ananya Yadav">
+
             </div>
 
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h1 class="t-center my-2 t-white f-2">About Me</h1>
-        <div class="about-container flex s-around ">
-            <div class=" about-left flex s-center items-center">
-                <!-- Here in src replade the given link with your secondary image link -->
-                <img src="{%static 'images/dog.png'%}" alt="" style="width: 60%;">
+    </section>
+    <!-- ================= ABOUT SECTION ================= -->
+
+<section id="about">
+
+    <h1 class="t-center my-2 t-white f-2">About Me</h1>
+
+    <div class="about-container flex s-around">
+
+        <div class="about-left flex s-center items-center">
+
+            <img src="{% static 'images/dog.png' %}" alt="About Image">
+
+        </div>
+
+        <div class="about-right flex">
+
+            <div class="about-content">
+
+                <h1 class="t-white m-b-1 poppins">
+                    Ananya Yadav
+                </h1>
+
+                <p class="t-white poppins">
+
+                    I am a B.Tech Computer Science & Engineering
+                    (Artificial Intelligence) student at
+                    Babu Banarasi Das University, Lucknow.
+
+                    I am passionate about Software Development,
+                    Machine Learning, Data Analysis and Full Stack
+                    Web Development.
+
+                    I enjoy building AI-powered applications,
+                    responsive websites and solving real-world
+                    problems using Python, Django, React.js,
+                    Scikit-learn and MySQL.
+
+                    I continuously learn new technologies and
+                    strive to improve my programming,
+                    problem-solving and development skills.
+
+                </p>
+
+                <a href="#contact" class="btn">
+                    Hire Me
+                </a>
+
             </div>
 
-            <div class="about-right flex">
-                <div class="about-content">
-                    <h1 class="t-white m-b-1 poppins">Ananya Yadav</h1>
-                    <p class="t-white poppins">My name is Ananya Yadav.I’m a B.tech student in CSE-AI from Babu Banarsi das university Lucknow
-                        I am passionate about Machine Learning, Data Science, Python, Django and Full Stack
-                        Development. I enjoy solving real-world problems by building AI-powered and web-based
-                        applications.
+        </div>
 
-                     have experience in Python, Django, HTML, CSS, JavaScript, MySQL, Pandas, NumPy,
-                     and Power BI. I continuously learn new technologies and love creating
-                    projects that are practical, efficient and user-friendly.
-                    </p>    
-                    <a class="btn " id="hireme"
-                        href="">Hire Me</a>
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ================= SKILLS SECTION ================= -->
+
+<section id="skills">
+
+    <h1 class="t-center my-2 t-white f-2">
+
+        Technical Skills
+
+    </h1>
+
+    <div class="services-container flex s-around h-50">
+
+        <div class="skills-left flex s-center items-center">
+
+            <img src="{% static 'images/pro.png' %}" alt="Skills">
+
+        </div>
+
+        <div class="skills-right flex items-center">
+
+            <div class="skillss-container">
+
+                <div class="python bar p-relative">
+
+                    <span class="bar-content left t-white">
+                        Python
+                    </span>
+
+                    <span class="bar-content right-skills t-white">
+                        95%
+                    </span>
+
                 </div>
+
+                <div class="html bar p-relative">
+
+                    <span class="bar-content left t-white">
+                        HTML5
+                    </span>
+
+                    <span class="bar-content right-skills t-white">
+                        95%
+                    </span>
+
+                </div>
+
+                <div class="css bar p-relative">
+
+                    <span class="bar-content left t-white">
+                        CSS3
+                    </span>
+
+                    <span class="bar-content right-skills t-white">
+                        90%
+                    </span>
+
+                </div>
+
+                <div class="js bar p-relative">
+
+                    <span class="bar-content left t-white">
+                        JavaScript
+                    </span>
+
+                    <span class="bar-content right-skills t-white">
+                        85%
+                    </span>
+
+                </div>
+
+                <div class="java bar p-relative">
+
+                    <span class="bar-content left t-white">
+                        Django
+                    </span>
+
+                    <span class="bar-content right-skills t-white">
+                        90%
+                    </span>
+
+                </div>
+
+                <div class="mysql bar p-relative">
+
+                    <span class="bar-content left t-white">
+                        MySQL
+                    </span>
+
+                    <span class="bar-content right-skills t-white">
+                        85%
+                    </span>
+
+                </div>
+
+                <div class="learning bar p-relative">
+
+                    <span class="bar-content left t-white">
+                        Machine Learning
+                    </span>
+
+                    <span class="bar-content right-skills t-white">
+                        90%
+                    </span>
+
+                </div>
+
+                <div class="learning bar p-relative">
+
+                    <span class="bar-content left t-white">
+                        React.js
+                    </span>
+
+                    <span class="bar-content right-skills t-white">
+                        85%
+                    </span>
+
+                </div>
+
+                <div class="learning bar p-relative">
+
+                    <span class="bar-content left t-white">
+                        Power BI
+                    </span>
+
+                    <span class="bar-content right-skills t-white">
+                        80%
+                    </span>
+
+                </div>
+
             </div>
+
         </div>
-    </section>
 
-   <div class="python bar p-relative">
-<span class="bar-content left t-white">Python</span>
-<span class="bar-content right-skills t-white">95%</span>
-</div>
+    </div>
 
-<div class="django bar p-relative">
-<span class="bar-content left t-white">Django</span>
-<span class="bar-content right-skills t-white">90%</span>
-</div>
+</section>
+<!-- ================= PROJECTS SECTION ================= -->
 
-<div class="html bar p-relative">
-<span class="bar-content left t-white">HTML</span>
-<span class="bar-content right-skills t-white">90%</span>
-</div>
-
-<div class="css bar p-relative">
-<span class="bar-content left t-white">CSS</span>
-<span class="bar-content right-skills t-white">85%</span>
-</div>
-
-<div class="js bar p-relative">
-<span class="bar-content left t-white">JavaScript</span>
-<span class="bar-content right-skills t-white">75%</span>
-</div>
-
-<div class="mysql bar p-relative">
-<span class="bar-content left t-white">MySQL</span>
-<span class="bar-content right-skills t-white">85%</span>
-</div>
-
-<div class="ml bar p-relative">
-<span class="bar-content left t-white">Machine Learning</span>
-<span class="bar-content right-skills t-white">85%</span>
-</div>
-
-<div class="powerbi bar p-relative">
-<span class="bar-content left t-white">Power BI</span>
-<span class="bar-content right-skills t-white">80%</span>
-</div>
-
-    
-
-    <!-- Projects Section -->
-   <!-- ===================== Projects Section ===================== -->
 <section id="projects">
-    <h1 class="t-center my-2 t-white f-2">Projects</h1>
+
+    <h1 class="t-center my-2 t-white f-2">
+        My Projects
+    </h1>
 
     <div class="projects-container flex s-center">
 
         <!-- Project 1 -->
+
         <div class="projects-item flex f-col s-center items-center">
-            <h1 class="t-white poppins">Restaurant Price Prediction System</h1>
+
+            <h1 class="t-white poppins">
+                LifeSync – AI Health & Lifestyle Prediction System
+            </h1>
 
             <p class="t-white poppins">
-                Developed a Machine Learning web application using Python, Django,
-                Pandas and NumPy to predict restaurant prices. Performed data
-                preprocessing, feature engineering and visualization using
-                Matplotlib. The project was successfully deployed on Render.
+
+                Developed an AI-powered healthcare application using
+                Python, Scikit-learn, Pandas, NumPy, Matplotlib and Plotly.
+
+                Implemented data preprocessing, feature engineering,
+                machine learning models and interactive visualizations
+                to provide personalized health and lifestyle predictions.
+
             </p>
 
             <div class="buttons flex s-around">
-                <a href="https://github.com/yananya012-svg/restaurant-price-prediction"
-                    target="_blank" class="btn mx-1 m-top">
+
+                <a href="https://github.com/yananya012-svg"
+                    target="_blank"
+                    class="btn mx-1 m-top">
+
                     GitHub
+
                 </a>
 
-                <a href="https://restaurant-loaction.onrender.com"
-                    target="_blank" class="btn m-top live">
+                <a href="#"
+                    target="_blank"
+                    class="btn m-top live">
+
                     Live Demo
+
                 </a>
+
             </div>
+
         </div>
+
+
 
         <!-- Project 2 -->
+
         <div class="projects-item flex f-col s-center items-center">
-            <h1 class="t-white poppins">Student Dashboard Management System</h1>
+
+            <h1 class="t-white poppins">
+
+                E-Commerce Website
+
+            </h1>
 
             <p class="t-white poppins">
-                Built a responsive Student Dashboard using Django and MySQL with
-                secure login authentication, CRUD operations, attendance
-                management and student record management for educational
-                institutions.
+
+                Built a responsive E-Commerce application using
+                React.js, JavaScript, HTML5 and CSS3.
+
+                Features include product listing,
+                category filtering,
+                search functionality,
+                shopping cart
+                and responsive UI.
+
             </p>
 
             <div class="buttons flex s-around">
+
                 <a href="https://github.com/yananya012-svg"
-                    target="_blank" class="btn mx-1 m-top">
+                    target="_blank"
+                    class="btn mx-1 m-top">
+
                     GitHub
+
                 </a>
 
                 <a href="#"
-                    target="_blank" class="btn m-top live">
+                    target="_blank"
+                    class="btn m-top live">
+
                     Live Demo
+
                 </a>
+
             </div>
+
         </div>
 
+
+
         <!-- Project 3 -->
+
         <div class="projects-item flex f-col s-center items-center">
-            <h1 class="t-white poppins">Personal Portfolio Website</h1>
+
+            <h1 class="t-white poppins">
+
+                Personal Portfolio Website
+
+            </h1>
 
             <p class="t-white poppins">
-                Designed and developed a responsive portfolio website using
-                Django, HTML, CSS and JavaScript to showcase my projects,
-                certifications, technical skills and resume with a modern UI.
+
+                Designed and developed a responsive portfolio website
+                using Django, HTML5, CSS3 and Bootstrap.
+
+                Showcases projects,
+                certifications,
+                technical skills,
+                achievements,
+                GitHub,
+                LinkedIn,
+                contact form
+                and resume download.
+
             </p>
 
             <div class="buttons flex s-around">
+
                 <a href="https://github.com/yananya012-svg"
-                    target="_blank" class="btn mx-1 m-top">
+                    target="_blank"
+                    class="btn mx-1 m-top">
+
                     GitHub
+
                 </a>
 
                 <a href="#"
-                    target="_blank" class="btn m-top live">
+                    target="_blank"
+                    class="btn m-top live">
+
                     Live Demo
+
                 </a>
+
             </div>
+
         </div>
 
     </div>
+
 </section>
+<!-- ================= CONTACT SECTION ================= -->
 
+<section id="contact" class="m-b-1">
 
-<!-- ===================== Contact Section ===================== -->
-<section id="Contact" class="m-b-1">
+    <h1 class="t-center my-2 t-white f-2">
+        Contact Me
+    </h1>
 
-    <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
-
-    <div class="contact-container flex s-around items-centers">
+    <div class="contact-container flex s-around items-center">
 
         <div class="form" id="contactForm">
 
             <form method="post">
+
                 {% csrf_token %}
 
                 <div class="name form-div">
-                    <input type="text"
-                           name="name"
-                           class="poppins"
-                           placeholder="Enter Your Name"
-                           required>
+
+                    <input
+                        type="text"
+                        name="name"
+                        class="poppins"
+                        placeholder="Enter Your Name"
+                        required>
+
                 </div>
 
                 <div class="email form-div">
-                    <input type="email"
-                           name="email"
-                           class="poppins"
-                           placeholder="Enter Your Email"
-                           required>
+
+                    <input
+                        type="email"
+                        name="email"
+                        class="poppins"
+                        placeholder="Enter Your Email"
+                        required>
+
                 </div>
 
                 <div class="phone form-div">
-                    <input type="tel"
-                           name="number"
-                           class="poppins"
-                           placeholder="Enter Your Phone Number"
-                           required>
+
+                    <input
+                        type="tel"
+                        name="number"
+                        class="poppins"
+                        placeholder="Enter Your Phone Number"
+                        required>
+
                 </div>
 
                 <div class="textarea form-div">
+
                     <textarea
                         name="content"
-                        cols="30"
                         rows="8"
                         class="poppins"
-                        placeholder="Write Your Message"
+                        placeholder="Write your message..."
                         required></textarea>
+
                 </div>
 
                 <button type="submit" class="btn poppins">
+
+                    <i class="fa-solid fa-paper-plane"></i>
                     Send Message
+
                 </button>
 
             </form>
@@ -264,49 +573,156 @@
 
     </div>
 
+    <br><br>
+
+    <div class="contact-info t-center">
+
+        <h2 class="t-white">Get In Touch</h2>
+
+        <br>
+
+        <p class="t-white">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            yananya012@gmail.com
+
+        </p>
+
+        <br>
+
+        <p class="t-white">
+
+            <i class="fa-solid fa-phone"></i>
+
+            +91 XXXXXXXXXX
+
+        </p>
+
+        <br>
+
+        <p class="t-white">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            Lucknow, Uttar Pradesh, India
+
+        </p>
+
+    </div>
+
 </section>
+<!-- ================= FOOTER ================= -->
 
-
-<!-- ===================== Footer Section ===================== -->
 <footer id="footer">
 
-    <ul class="flex s-center w-80 m-auto my-2 res">
-        <li><a href="#home" class="poppinss">Home</a></li>
-        <li><a href="#about" class="poppinss">About</a></li>
-        <li><a href="#skills" class="poppinss">Skills</a></li>
-        <li><a href="#projects" class="poppinss">Projects</a></li>
-        <li><a href="#Contact" class="poppinss">Contact</a></li>
-    </ul>
+    <div class="footer-container">
 
-    <ul class="flex s-center w-80 font-awesome">
-
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/ananya-yadav-41610229a"
-            target="_blank">
-            <li><i class="fa-brands fa-linkedin-in"></i></li>
-        </a>
-
-        <!-- GitHub -->
-        <a href="https://github.com/yananya012-svg"
-            target="_blank">
-            <li><i class="fa-brands fa-github"></i></li>
-        </a>
-
-        <!-- Email -->
-        <a href="mailto:yananya012@gmail.com">
-            <li><i class="fa-solid fa-envelope"></i></li>
-        </a>
-
-    </ul>
-
-    <p class="t-center my-2 poppins">
-        © 2026 All Rights Reserved |
-        <span class="cpy-white poppins">
+        <h2 class="t-white t-center">
             Ananya Yadav
-        </span>
-    </p>
+        </h2>
+
+        <p class="t-center t-white poppins">
+
+            Software Developer • Machine Learning Enthusiast • Data Analyst
+
+        </p>
+
+        <ul class="flex s-center w-80 m-auto my-2">
+
+            <li>
+                <a href="#home" class="poppins">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#about" class="poppins">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="#skills" class="poppins">
+                    Skills
+                </a>
+            </li>
+
+            <li>
+                <a href="#projects" class="poppins">
+                    Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact" class="poppins">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+        <ul class="flex s-center font-awesome">
+
+            <!-- GitHub -->
+
+            <a href="https://github.com/yananya012-svg"
+                target="_blank">
+
+                <li>
+                    <i class="fab fa-github"></i>
+                </li>
+
+            </a>
+
+            <!-- LinkedIn -->
+
+            <a href="https://www.linkedin.com/in/ananya-yadav-41610229a"
+                target="_blank">
+
+                <li>
+                    <i class="fab fa-linkedin"></i>
+                </li>
+
+            </a>
+
+            <!-- Email -->
+
+            <a href="mailto:yananya012@gmail.com">
+
+                <li>
+                    <i class="fas fa-envelope"></i>
+                </li>
+
+            </a>
+
+        </ul>
+
+        <br>
+
+        <a href="{% static 'pdf/Ananya_Yadav_Resume.pdf' %}"
+            target="_blank">
+
+            <button class="btn">
+
+                Download Resume
+
+            </button>
+
+        </a>
+
+        <br><br>
+
+        <p class="t-center poppins">
+
+            © 2026 Ananya Yadav | All Rights Reserved.
+
+        </p>
+
+    </div>
 
 </footer>
-     
-</body> 
+
+</body>
+
 </html>
